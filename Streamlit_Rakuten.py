@@ -336,8 +336,8 @@ def main():
 
     train_data = pd.merge(X_train, Y_train, on='ID')
 
-    train_data = train_data.head(20000)
-    Y_train = Y_train.head(20000)
+    train_data = train_data.head(12000)
+    Y_train = Y_train.head(12000)
 
     le = LabelEncoder()
     train_data['prdtypecode'] = le.fit_transform(train_data['prdtypecode'])
